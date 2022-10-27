@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D32196F3">
+
+    <ImageView
+        android:id="@+id/image_background_4"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_sgu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/IntroduceText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bắt đầu sử dụng dịch vụ bằng cách \n        Đăng nhập hoặc Đăng ký !"
+        app:layout_constraintTop_toBottomOf="@id/image_background_4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/bt_intro_login"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Đăng nhập"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="500"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IntroduceText6"
+        android:background="@drawable/outline_text"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        />
+
+    <Button
+        android:id="@+id/bt_intro_regis"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Đăng ký"
+        android:textColor="#D32196F3"
+        android:textFontWeight="500"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_intro_login"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/outline"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

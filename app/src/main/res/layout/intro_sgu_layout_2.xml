@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#D32196F3">
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="Bỏ qua"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/outline"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="50dp">
+
+        <ImageView
+            android:id="@+id/image_background_3"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/image_background_3"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/IntroduceText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_background_3"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/baloo"
+            android:text="Ví điện tử SGU"
+            android:textSize="25dp"
+            android:background="#2196F3"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:id="@+id/IntroduceText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IntroduceText4"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:text="Dịch vụ đồng hành cùng sinh viên"
+            android:textColor="@color/black"
+            android:textSize="23dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/IntroduceText5"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/describe_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶ Chuyển tiền miễn phí, nhanh chóng."
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/describe_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶ Nhiều dịch vụ ưu đãi và tiện lợi."
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/describe_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶ Mang lại trải ngiệm tốt cho sinh viên."
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/nextImage"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Tiếp theo ➔"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="500"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/outline_text"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

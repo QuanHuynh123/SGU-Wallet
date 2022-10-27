@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D32196F3">
+
+    <ImageView
+        android:id="@+id/sgu_icon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_sgu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sgu_icon">
+
+        <TextView
+            android:id="@+id/title_regis"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="Sinh viên vui lòng cung cấp chính xác và đầy đủ thông tin đăng ký "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_regis"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/outline"
+            android:hint="  Họ và Tên"
+            android:padding="12dp"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/edit_mssv"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_name"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/outline"
+            android:hint="  Mã số sinh viên"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/ic_mssv"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_mssv"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/outline"
+            android:hint="  Số điện thoại"
+            android:padding="12dp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_phone"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/outline"
+            android:hint="  Mật khẩu*"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/edit_password2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_password"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/outline"
+            android:hint="Nhập lại mật khẩu*"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"/>
+
+        <CheckBox
+            android:id="@+id/terms"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_password2"
+            android:layout_marginTop="30dp"
+            android:text="Tôi đã đọc và đồng ý với điều khoản sử dụng ví điện tử SGU"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/bt_regis"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/terms"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="#D32196F3"
+            android:text="Đăng ký "
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
